@@ -5,6 +5,6 @@
 # builds actually ran successfully without any errors!
 set -oue pipefail
 
-# Your code goes here.
-echo 'This is an example shell script'
-echo 'Scripts here will run during build if specified in recipe.yml'
+curl -L -o bw.zip "https://vault.bitwarden.com/download/?app=cli&platform=linux"
+unzip bw.zip -d /usr/local/bin bw
+chmod +x /usr/local/bin/bw
