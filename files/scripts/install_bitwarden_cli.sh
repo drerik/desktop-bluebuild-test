@@ -6,5 +6,5 @@
 set -oue pipefail
 
 curl -L -o bw.zip "https://vault.bitwarden.com/download/?app=cli&platform=linux"
-unzip bw.zip -d /usr/local/bin bw
-chmod +x /usr/local/bin/bw
+unzip bw.zip -d /usr/bin bw
+chmod +x /usr/bin/bw
