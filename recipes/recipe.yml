@@ -23,6 +23,7 @@ modules:
     install:
       - wireguard-tools
       - tailscale
+      - wdisplays
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
@@ -42,6 +43,8 @@ modules:
         - com.nextcloud.desktopclient.nextcloud
         - com.bitwarden.desktop
         - md.obsidian.Obsidian
+        - com.mattermost.Desktop
+        - org.chromium.Chromium
       remove: []
     user: {} # Also add Flathub user repo, but no user packages
 
