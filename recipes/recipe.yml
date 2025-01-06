@@ -45,6 +45,7 @@ modules:
         - md.obsidian.Obsidian
         - com.mattermost.Desktop
         - org.chromium.Chromium
+        - com.slack.Slack
       remove: []
     user: {} # Also add Flathub user repo, but no user packages
 
