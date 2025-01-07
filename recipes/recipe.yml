@@ -24,6 +24,7 @@ modules:
       - wireguard-tools
       - tailscale
       - wdisplays
+      - virt-manager
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
@@ -46,6 +47,7 @@ modules:
         - com.mattermost.Desktop
         - org.chromium.Chromium
         - com.slack.Slack
+        - org.remmina.Remmina
       remove: []
     user: {} # Also add Flathub user repo, but no user packages
 
