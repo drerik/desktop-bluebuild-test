@@ -48,6 +48,7 @@ modules:
         - org.chromium.Chromium
         - com.slack.Slack
         - org.remmina.Remmina
+        - com.jgraph.drawio.desktop
       remove: []
     user: {} # Also add Flathub user repo, but no user packages
 
