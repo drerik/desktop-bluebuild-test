@@ -1,0 +1,4 @@
+name: rl-theme
+shortdesc: Applies a Redpill Linpo theme on the computer.
+example: |
+  type: rl-theme
