@@ -17,6 +17,12 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
   rpm-ostree rebase ostree-image-signed:docker://ghcr.io/drerik/sway-desktop:latest
   ```
+
+- Alternative: Rebase to a unsigned image:
+  ```bash
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/drerik/sway-desktop-rl:latest
+  ```
+
 - Reboot again to complete the installation
   ```
   systemctl reboot
