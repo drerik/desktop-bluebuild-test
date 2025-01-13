@@ -25,6 +25,7 @@ modules:
       - tailscale
       - wdisplays
       - virt-manager
+      # sudo sed 's/#firewall_backend.*$/firewall_backend = \"iptables\"/' /etc/libvirt/network.conf
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
@@ -49,6 +50,7 @@ modules:
         - com.slack.Slack
         - org.remmina.Remmina
         - com.jgraph.drawio.desktop
+        - org.libreoffice.LibreOffice
       remove: []
     user: {} # Also add Flathub user repo, but no user packages
 
