@@ -1,0 +1,4 @@
+name: docker
+shortdesc: Installs the official docker deployment
+example: |
+  type: docker

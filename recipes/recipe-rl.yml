@@ -53,5 +53,7 @@ modules:
     user: {} # Also add Flathub user repo, but no user packages
   - type: rl-theme
     source: local
+  - type: docker
+    source: local
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
