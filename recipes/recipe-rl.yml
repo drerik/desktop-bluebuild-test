@@ -18,18 +18,34 @@ modules:
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
   - type: rpm-ostree
-    repos: []
+    repos: 
+      - https://download.docker.com/linux/fedora/docker-ce.repo
       # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
     install:
       - wireguard-tools
       - tailscale
       - wdisplays
       - virt-manager
+      # Install docker from docker repo
+      - docker-ce
+      - docker-ce-cli
+      - containerd.io
+      - docker-buildx-plugin
+      - docker-compose-plugin
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
       - firefox
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+      # Remove obsolete docker clients
+      - docker docker-client
+      - docker-client-latest
+      - docker-common
+      - docker-latest
+      - docker-latest-logrotate
+      - docker-logrotate docker-selinux
+      - docker-engine-selinux
+      - docker-engine
   - type: script
     scripts:
       - install_bitwarden_cli.sh
@@ -52,8 +68,6 @@ modules:
       remove: []
     user: {} # Also add Flathub user repo, but no user packages
   - type: rl-theme
-    source: local
-  - type: docker
     source: local
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
