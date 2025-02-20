@@ -37,15 +37,12 @@ modules:
       # "firefox" is the main package, "firefox-langpacks" is a dependency
       - firefox
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-      # Remove obsolete docker clients
-      - docker-client
-      - docker-client-latest
-      - docker-common
-      - docker-latest
-      - docker-latest-logrotate
-      - docker-logrotate docker-selinux
-      - docker-engine-selinux
-      - docker-engine
+      # Make shure docker packages are not installed
+      - docker-buildx
+      - docker-cli
+      - docker-compose
+      - docker-compose-switch
+      - docker-distribution
   - type: script
     scripts:
       - install_bitwarden_cli.sh
