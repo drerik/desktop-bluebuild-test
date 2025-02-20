@@ -38,11 +38,11 @@ modules:
       - firefox
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
       # Make shure docker packages are not installed
-      - docker-buildx
-      - docker-cli
-      - docker-compose
-      - docker-compose-switch
-      - docker-distribution
+      # - docker-buildx
+      # - docker-cli
+      # - docker-compose
+      # - docker-compose-switch
+      # - docker-distribution
   - type: script
     scripts:
       - install_bitwarden_cli.sh
