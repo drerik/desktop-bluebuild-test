@@ -38,7 +38,8 @@ modules:
       - firefox
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
       # Remove obsolete docker clients
-      - docker docker-client
+      - docker
+      - docker-client
       - docker-client-latest
       - docker-common
       - docker-latest
