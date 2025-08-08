@@ -47,23 +47,28 @@ modules:
     scripts:
       - install_bitwarden_cli.sh
   - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
-    system:
-      # If no repo information is specified, Flathub will be used by default
-      install:
-        - com.vivaldi.Vivaldi
-        - com.spotify.Client
-        - io.github.hrkfdn.ncspot
-        - com.nextcloud.desktopclient.nextcloud
-        - com.bitwarden.desktop
-        - md.obsidian.Obsidian
-        - com.mattermost.Desktop
-        - org.chromium.Chromium
-        - com.slack.Slack
-        - org.remmina.Remmina
-        - com.jgraph.drawio.desktop
-      remove: []
-    user: {} # Also add Flathub user repo, but no user packages
+    configurations:
+      - scope: user
+        repo:
+          # you can override the title to make inclusion of both system and user repos clearer
+          title: Flathub (user)
+      - notify: true
+        scope: system
+        repo:
+          title: Flathub (system)      
+          install:
+            - com.vivaldi.Vivaldi
+            - com.spotify.Client
+            - io.github.hrkfdn.ncspot
+            - com.nextcloud.desktopclient.nextcloud
+            - com.bitwarden.desktop
+            - md.obsidian.Obsidian
+            - com.mattermost.Desktop
+            - org.chromium.Chromium
+            - com.slack.Slack
+            - org.remmina.Remmina
+            - com.jgraph.drawio.desktop
+            - org.gnome.DejaDup
   - type: rl-theme
     source: local
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
