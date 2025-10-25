@@ -30,7 +30,9 @@ jobs:
           - recipe.yml
           - recipe-rl.yml
           - recipe-rl-gnome.yml
-          - recipe-cosmic-42.yaml
+          # - recipe-cosmic-42.yaml
+          - recipe-sway-41.yml
+          - recipe-sway-42.yml
     steps:
       # the build is fully handled by the reusable github action
       - name: Build Custom Image

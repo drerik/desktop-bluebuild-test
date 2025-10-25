@@ -1,0 +1,55 @@
+type: rpm-ostree
+repos: []
+install:
+  # Based on package list from upstream fedora sway spin: 
+  # https://pagure.io/workstation-ostree-config/blob/main/f/packages/sway-atomic.yaml
+  - NetworkManager-l2tp-gnome
+  - NetworkManager-libreswan-gnome
+  - NetworkManager-openconnect-gnome
+  - NetworkManager-openvpn-gnome
+  - NetworkManager-sstp-gnome
+  - NetworkManager-vpnc-gnome
+  - Thunar
+  - blueman
+  - bolt
+  - dunst
+  - foot
+  - fprintd-pam
+  - gnome-keyring-pam
+  - grim
+  - gvfs
+  - gvfs-smb
+  - imv
+  - kanshi
+  - lxqt-policykit
+  - mesa-dri-drivers
+  - mesa-vulkan-drivers
+  - network-manager-applet
+  - pavucontrol
+  - pinentry-gnome3
+  - playerctl
+  - plymouth-system-theme
+  - polkit
+  - pulseaudio-utils
+  - sddm
+  - sddm-wayland-sway
+  - slurp
+  - sway
+  - sway-config-fedora
+  - swaybg
+  - swayidle
+  - swaylock
+  - system-config-printer
+  - thunar-archive-plugin
+  - waybar
+  - wev
+  - wl-clipboard
+  - wlr-randr
+  - wlsunset
+  - xarchiver
+  - xdg-desktop-portal-gtk
+  - xdg-desktop-portal-wlr
+  - xorg-x11-server-Xwayland
+remove: []
+# Package list from: https://pagure.io/workstation-ostree-config/blob/main/f/sway-atomic-common.yaml
+
