@@ -33,6 +33,7 @@ jobs:
           # - recipe-cosmic-42.yaml
           - recipe-sway-41.yml
           - recipe-sway-42.yml
+          - recipes/recipe-asus-flow-z13.yml
     steps:
       # the build is fully handled by the reusable github action
       - name: Build Custom Image
