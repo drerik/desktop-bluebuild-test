@@ -10,3 +10,4 @@ cp ${MODULE_DIRECTORY}/netbird/files/netbird.repo /etc/yum.repos.d/netbird.repo
 echo "Output repo file:"
 cat /etc/yum.repos.d/netbird.repo
 rpm-ostree install netbird netbird-ui
+mkdir /var/log/netbird
