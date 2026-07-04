@@ -6,8 +6,7 @@ name: bazzite-asus-rog-flow-z13
 description: Bluefin deployment with extra tools for Asus ROG Flow Z13
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/projectbluefin/bluefin
-# base-image: ghcr.io/ublue-os/bazzite-gnome
+base-image: ghcr.io/ublue-os/bazzite-gnome
 image-version: stable # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
