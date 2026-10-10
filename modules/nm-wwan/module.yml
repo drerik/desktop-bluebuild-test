@@ -1,0 +1,4 @@
+name: netbird
+shortdesc: Installs netbird
+example: |
+  type: netbird
